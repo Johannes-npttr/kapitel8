@@ -14,5 +14,7 @@ public class Main
         {
             summe = summe +i;
         }
+        
+        System.out.println("Summe =" + summe);
     }
 }
