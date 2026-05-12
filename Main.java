@@ -12,7 +12,7 @@ public class Main
         int summe = 0;
         for(int i = 1; i<=20; i++)
         {
-            summe = summe +i;
+            summe += i;
         }
         
         System.out.println("Summe =" + summe);
