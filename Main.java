@@ -16,7 +16,15 @@ public class Main
         {
             summe += i;
         }
-        
+
+        int mult = 1;
+
+        for(int i = 1; i<=obereGrenze; i++)
+        {
+            mult *= i;
+        }
         System.out.println("Summe =" + summe);
+        System.out.println("Mult =" + mult);
+
     }
 }
