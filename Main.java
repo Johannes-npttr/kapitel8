@@ -1,10 +1,5 @@
+import java.math.*;
 
-/**
- * Beschreiben Sie hier die Klasse Main.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class Main
 {
     public static void main(String args[])
@@ -17,11 +12,12 @@ public class Main
             summe += i;
         }
 
-        int mult = 1;
+        BigInteger mult = new BigInteger("1");
 
         for(int i = 1; i<=obereGrenze; i++)
         {
-            mult *= i;
+            BigInteger temp = new BigInteger(String.valueOf(i));
+            mult = mult.multiply(temp);
         }
         System.out.println("Summe =" + summe);
         System.out.println("Mult =" + mult);
